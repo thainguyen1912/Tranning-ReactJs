@@ -1,26 +1,31 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, {Component} from 'react';
 import './App.css';
+import TrafficLight from './Components/TrafficLight';
 
-function App() {
+class App extends Component {
+  // constructor(props){
+  //   super(props);
+  //   this.TodoItems=[
+  //     {title : 'Mua Bim Bim', isComplete:true},
+  //     {title : 'Đi Đá Bóng', isComplete:true},
+  //     {title : 'Ngủ'}
+  //   ];
+  // }
+
+  render(){
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+       {/* {
+          this.TodoItems.length > 0 &&
+        this.TodoItems.map((item, index) => <TodoItem item={item} key={index}/>)
+        
+      }
+      {this.TodoItems.length===0 && 'Nothing here'}  */}
+      <TrafficLight />
+
     </div>
   );
+  }
 }
 
 export default App;
