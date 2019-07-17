@@ -8,3 +8,7 @@
     text-decoration: line-through;
     opacity: .3;
 }
+img{
+    float: left;
+    margin-right:10px; 
+}
